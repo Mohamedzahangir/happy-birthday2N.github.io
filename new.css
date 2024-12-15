@@ -1,0 +1,168 @@
+body {
+  font-style: "Roboto";
+  background-image:radial-gradient(rgb(215, 69, 240),rgb(132, 0, 255),rgb(16, 0, 0));
+  font-weight:bold;
+  height:100vh;
+}
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-image:radial-gradient(rgb(215, 69, 240));
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+.first-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 20rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+}
+
+.second-text {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 8.5rem;
+  text-align:center;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 7s;
+  color: #ffffff;
+}
+
+.third-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.fourth-text {
+  font-size: 2rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #ffffff;
+  animation-name: fadeInOut;
+  animation-delay: 9s;
+  animation-duration: 9s;
+}
+
+.fifth-text {
+  font-size: 2rem;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  opacity: 0;
+  color: #f8f8f6;
+  animation-name: fadeInOut;
+  animation-delay: 15s;
+  animation-duration: 15s;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: rem;
+    top:15rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 9rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
